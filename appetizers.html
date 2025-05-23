@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appetizers - Delicious Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu-section {
+            padding: 120px 2rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .menu-content {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-content h1 {
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-item {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-item .price {
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .menu-item .description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Delicious Restaurant</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="menuBtn">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="menu-section">
+        <div class="menu-content">
+            <h1>Appetizers</h1>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="image/Bruschetta.jpeg" alt="Bruschetta">
+                    <h3>Classic Bruschetta</h3>
+                    <div class="price">$8.99</div>
+                    <p class="description">Toasted artisan bread topped with fresh tomatoes, basil, garlic, and extra virgin olive oil.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/Calamari.jpeg" alt="Calamari">
+                    <h3>Crispy Calamari</h3>
+                    <div class="price">$12.99</div>
+                    <p class="description">Lightly battered and fried calamari served with marinara sauce and lemon wedges.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/Mozzarella Sticks.jpeg" alt="Mozzarella Sticks">
+                    <h3>Mozzarella Sticks</h3>
+                    <div class="price">$9.99</div>
+                    <p class="description">Golden-fried mozzarella sticks served with marinara sauce and fresh herbs.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/Garlic Bread.jpeg" alt="Garlic Bread">
+                    <h3>Garlic Bread</h3>
+                    <div class="price">$6.99</div>
+                    <p class="description">Toasted bread with garlic butter, herbs, and parmesan cheese.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Menu Popup -->
+    <div id="menuPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <a href="appetizers.html" class="menu-item">Appetizers</a>
+                <a href="main-courses.html" class="menu-item">Main Courses</a>
+                <a href="desserts.html" class="menu-item">Desserts</a>
+                <a href="beverages.html" class="menu-item">Beverages</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

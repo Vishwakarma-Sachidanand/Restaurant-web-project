@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Delicious Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-section {
+            padding: 120px 2rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content h1 {
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .team-section {
+            margin-top: 3rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Delicious Restaurant</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="menuBtn">Menu</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-section">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>Welcome to Delicious Restaurant, where culinary excellence meets warm hospitality. Since our establishment in 2010, we have been dedicated to providing our guests with an unforgettable dining experience.</p>
+            
+            <p>Our restaurant is built on three core principles: quality ingredients, exceptional service, and a welcoming atmosphere. We source our ingredients from local farmers and suppliers to ensure the freshest and most flavorful dishes.</p>
+            
+            <p>Our team of experienced chefs combines traditional cooking techniques with modern innovation to create dishes that are both familiar and exciting. Each plate is carefully crafted to delight your senses and create lasting memories.</p>
+
+            <div class="team-section">
+                <h2>Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="image/HeadChef.jpeg" alt="Head Chef">
+                        <h3>John Smith</h3>
+                        <p>Head Chef</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="image/Sous Chef.jpeg" alt="Sous Chef">
+                        <h3>Sarah Johnson</h3>
+                        <p>Sous Chef</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="image/Restaurant Manager.jpeg" alt="Restaurant Manager">
+                        <h3>Michael Brown</h3>
+                        <p>Restaurant Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Menu Popup -->
+    <div id="menuPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <a href="appetizers.html" class="menu-item">Appetizers</a>
+                <a href="main-courses.html" class="menu-item">Main Courses</a>
+                <a href="desserts.html" class="menu-item">Desserts</a>
+                <a href="beverages.html" class="menu-item">Beverages</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts - Delicious Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu-section {
+            padding: 120px 2rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .menu-content {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-content h1 {
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-item {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-item .price {
+            color: #ff6b6b;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .menu-item .description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Delicious Restaurant</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="menuBtn">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="menu-section">
+        <div class="menu-content">
+            <h1>Desserts</h1>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="image/Cake.jpeg" alt="Chocolate Cake">
+                    <h3>Chocolate Lava Cake</h3>
+                    <div class="price">$8.99</div>
+                    <p class="description">Warm chocolate cake with a molten center, served with vanilla ice cream and fresh berries.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/Cheesecake.jpeg" alt="Cheesecake">
+                    <h3>New York Cheesecake</h3>
+                    <div class="price">$7.99</div>
+                    <p class="description">Classic New York style cheesecake with a graham cracker crust and berry compote.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/Tiramisu.jpeg" alt="Tiramisu">
+                    <h3>Classic Tiramisu</h3>
+                    <div class="price">$8.99</div>
+                    <p class="description">Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder.</p>
+                </div>
+
+                <div class="menu-item">
+                    <img src="image/Ice Cream.jpeg" alt="Ice Cream">
+                    <h3>Artisanal Ice Cream</h3>
+                    <div class="price">$6.99</div>
+                    <p class="description">Three scoops of house-made ice cream with your choice of toppings.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Menu Popup -->
+    <div id="menuPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <a href="appetizers.html" class="menu-item">Appetizers</a>
+                <a href="main-courses.html" class="menu-item">Main Courses</a>
+                <a href="desserts.html" class="menu-item">Desserts</a>
+                <a href="beverages.html" class="menu-item">Beverages</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
